@@ -1,0 +1,45 @@
+
+
+
+public class Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  //initial values
+
+	       int i = 200;
+
+	 
+
+	            //cast to a short
+
+	short s = (short)i;
+
+	System.out.println(s);
+
+	   
+	//cast to a double
+
+	double d = (double)i;
+
+	System.out.println(d);
+      
+	
+	//cast to a byte
+
+	byte b = (byte)i;
+
+	System.out.println(b);
+	
+	
+	}
+
+}
+
+
+// note error will occur due to the amount being higher than the bit can handle.
+// will result in -56
+// 200 as a 32-bit binary number is represented as:
+// 0000 0000 0000 0000     0000 0000 1100 1000
+//  convert this number to a byte (which is an 8-bit type), we must truncate the extra bits. 
+// This leaves us with: 1100 1000.
